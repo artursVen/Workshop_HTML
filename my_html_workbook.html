@@ -4,44 +4,701 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GET metodes piemērs</title>
+
+    <title>Bon Voyage Mars!</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, "Times New Roman", serif;
+            background-color: #f6f1e7;
+            color: #243642;
+        }
+
+        /* HEADER */
+
+        header {
+            background-color: #2a9d8f;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 48px;
+            letter-spacing: 3px;
+        }
+
+        header p {
+            margin-bottom: 0;
+            font-size: 18px;
+        }
+
+        .mars-line {
+            background-color: #e76f51;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+
+        /* GALVENAIS KONTEINERS */
+
+        .container {
+            max-width: 950px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+
+        /* INTRO */
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .intro h2 {
+            color: #e76f51;
+            font-size: 32px;
+        }
+
+
+        /* FORMA */
+
+        form {
+            background-color: white;
+            padding: 35px;
+            border-radius: 4px;
+            box-shadow: 8px 8px 0 #264653;
+        }
+
+        fieldset {
+            border: 2px solid #2a9d8f;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        legend {
+            background-color: #2a9d8f;
+            color: white;
+            padding: 8px 18px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+
+        /* FORMAS LAUKI */
+
+        .row {
+            display: flex;
+            gap: 25px;
+        }
+
+        .field {
+            flex: 1;
+            margin-bottom: 22px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #d8d2c4;
+            background-color: #fffdf8;
+            font-size: 15px;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #2a9d8f;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        input[type="color"] {
+            height: 55px;
+            padding: 4px;
+        }
+
+
+        /* RADIO / CHECKBOX */
+
+        .choices {
+            padding: 15px;
+            background-color: #f6f1e7;
+        }
+
+        .choices label {
+            display: inline;
+            margin-right: 25px;
+            font-weight: normal;
+        }
+
+
+        /* ĪPAŠĀ BIĻETES DAĻA */
+
+        .ticket {
+            background-color: #f4d35e;
+            padding: 20px;
+            border-left: 8px solid #e76f51;
+            margin-bottom: 25px;
+        }
+
+        .ticket h3 {
+            margin-top: 0;
+        }
+
+
+        /* POGAS */
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        button {
+            flex: 1;
+            padding: 16px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .get {
+            background-color: #264653;
+            color: white;
+        }
+
+        .post {
+            background-color: #e76f51;
+            color: white;
+        }
+
+        .escape {
+            background-color: #f4d35e;
+            color: #243642;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+        }
+
+
+        /* LAUKS ĀRPUS FORMAS */
+
+        .outside {
+            margin-top: 35px;
+            background-color: #cdeae5;
+            padding: 25px;
+            border: 2px dashed #2a9d8f;
+        }
+
+        .outside h3 {
+            margin-top: 0;
+            color: #16786d;
+        }
+
+
+        footer {
+            margin-top: 60px;
+            padding: 25px;
+            text-align: center;
+            background-color: #264653;
+            color: white;
+        }
+
+
+        @media (max-width: 700px) {
+
+            .row,
+            .buttons {
+                flex-direction: column;
+            }
+
+        }
+    </style>
+
 </head>
+
 
 <body>
 
-    <!DOCTYPE html>
-<html lang="lv">
 
-<head>
-    <meta charset="UTF-8">
-    <title>GET piemērs</title>
-</head>
+<header>
 
-<body>
+    <h1>☀ BON VOYAGE MARS!</h1>
 
-    <h1>Google meklēšana ar GET</h1>
+    <p>
+        Interplanetary Holiday Company
+    </p>
 
-    <form action="https://www.google.com/search" method="GET">
+</header>
 
-        <label for="search">Meklēt:</label>
 
-        <input
-            type="text"
-            id="search"
-            name="q"
-            placeholder="Ievadi meklējamo tekstu"
-            required
-        >
+<div class="mars-line">
+    EARTH ✦ ✦ ✦ 225 000 000 KM ✦ ✦ ✦ MARS
+</div>
 
-        <button type="submit">
-            Meklēt Google
-        </button>
+
+<div class="container">
+
+
+    <div class="intro">
+
+        <h2>Your new life starts 225 million kilometres away.</h2>
+
+        <p>
+            Aizpildi ceļotāja karti un rezervē savu
+            vienvirziena piedzīvojumu uz Sarkano planētu.
+        </p>
+
+    </div>
+
+
+    <form
+        id="marsHoliday"
+        action="https://httpbin.org/get"
+        method="get"
+    >
+
+
+        <!-- PERSONAS INFORMĀCIJA -->
+
+        <fieldset>
+
+            <legend>CEĻOTĀJA PASE</legend>
+
+
+            <div class="row">
+
+                <div class="field">
+
+                    <label for="traveller">
+                        Ceļotāja vārds
+                    </label>
+
+                    <input
+                        type="text"
+                        id="traveller"
+                        name="traveller"
+                        placeholder="Arthur Armstrong"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="field">
+
+                    <label for="email">
+                        Zemes e-pasts
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="arthur@earth.com"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="field">
+
+                    <label for="family">
+                        Cik cilvēkus atstāj uz Zemes?
+                    </label>
+
+                    <input
+                        type="number"
+                        id="family"
+                        name="family"
+                        min="0"
+                        max="100"
+                        value="0"
+                    >
+
+                </div>
+
+
+                <div class="field">
+
+					<label for="age">
+						Vecums
+					</label>
+
+					<input
+						type="number"
+						id="age"
+						name="age"
+						min="35"
+						max="80"
+						placeholder="35–80"
+						required
+					>
+
+					<small>
+						Ceļojumam atļautais vecums: 35–80 gadi.
+					</small>
+
+			</div>
+
+            </div>
+
+
+            <div class="field">
+
+                <label for="passport">
+                    Augšupielādē kosmosa pasi
+                </label>
+
+                <input
+                    type="file"
+                    id="passport"
+                    name="passport"
+                >
+
+            </div>
+
+        </fieldset>
+
+
+
+        <!-- CEĻOJUMA IZVĒLE -->
+
+        <fieldset>
+
+            <legend>TAVA MARSA PAKETE</legend>
+
+
+            <div class="field">
+
+                <label for="destination">
+                    Galamērķis
+                </label>
+
+                <select
+                    id="destination"
+                    name="destination"
+                >
+
+                    <option value="olympus">
+                        🏔 Olympus Mons Resort
+                    </option>
+
+                    <option value="valles">
+                        🌄 Valles Marineris Village
+                    </option>
+
+                    <option value="utopia">
+                        🌅 Utopia Planitia Beach*
+                    </option>
+
+                    <option value="polar">
+                        ❄ North Polar Adventure Camp
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="field">
+
+                <label for="departure">
+                    Izlidošana
+                </label>
+
+                <input
+                    type="datetime-local"
+                    id="departure"
+                    name="departure"
+                >
+
+            </div>
+
+
+            <div class="ticket">
+
+                <h3>Izvēlies ceļojuma klasi</h3>
+
+                <div class="choices">
+
+                    <input
+                        type="radio"
+                        id="economy"
+                        name="travelClass"
+                        value="economy"
+                        checked
+                    >
+
+                    <label for="economy">
+                        Economy
+                    </label>
+
+
+                    <input
+                        type="radio"
+                        id="comfort"
+                        name="travelClass"
+                        value="comfort"
+                    >
+
+                    <label for="comfort">
+                        Space Comfort
+                    </label>
+
+
+                    <input
+                        type="radio"
+                        id="luxury"
+                        name="travelClass"
+                        value="luxury"
+                    >
+
+                    <label for="luxury">
+                        Zero-G Luxury
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <div class="field">
+
+                <label for="fear">
+                    Bailes no kosmosa: 0–100
+                </label>
+
+                <input
+                    type="range"
+                    id="fear"
+                    name="fear"
+                    min="0"
+                    max="100"
+                    value="25"
+                >
+
+            </div>
+
+
+            <div class="field">
+
+                <label for="helmet">
+                    Izvēlies ķiveres krāsu
+                </label>
+
+                <input
+                    type="color"
+                    id="helmet"
+                    name="helmet"
+                    value="#2a9d8f"
+                >
+
+            </div>
+
+        </fieldset>
+
+
+
+        <!-- EKSTRAS -->
+
+        <fieldset>
+
+            <legend>KO ŅEMSI LĪDZI?</legend>
+
+
+            <div class="choices">
+
+                <input
+                    type="checkbox"
+                    id="plant"
+                    name="plant"
+                    value="yes"
+                >
+
+                <label for="plant">
+                    🌱 Telpaugu
+                </label>
+
+
+                <input
+                    type="checkbox"
+                    id="music"
+                    name="music"
+                    value="yes"
+                >
+
+                <label for="music">
+                    🎵 Zemes mūzikas arhīvu
+                </label>
+
+
+                <input
+                    type="checkbox"
+                    id="pizza"
+                    name="pizza"
+                    value="yes"
+                >
+
+                <label for="pizza">
+                    🍕 Saldētu picu
+                </label>
+
+
+                <input
+                    type="checkbox"
+                    id="cat"
+                    name="cat"
+                    value="yes"
+                >
+
+                <label for="cat">
+                    🐈 Kaķi
+                </label>
+
+            </div>
+
+        </fieldset>
+
+
+
+        <!-- ZIŅA -->
+
+        <fieldset>
+
+            <legend>PASTKARTE NO ZEMES</legend>
+
+
+            <div class="field">
+
+                <label for="lastWords">
+                    Atstāj pēdējo ziņu Zemes iedzīvotājiem
+                </label>
+
+                <textarea
+                    id="lastWords"
+                    name="lastWords"
+                    rows="6"
+                    placeholder="Dārgā Zeme..."
+                ></textarea>
+
+            </div>
+
+        </fieldset>
+
+
+
+        <!-- POGAS -->
+
+        <div class="buttons">
+
+
+            <!-- GET -->
+
+            <button
+                type="submit"
+                class="get"
+            >
+                👀 PĀRBAUDĪT REZERVĀCIJU
+            </button>
+
+
+            <!-- POST -->
+
+            <button
+                type="submit"
+                class="post"
+                formmethod="post"
+                formaction="https://httpbin.org/post"
+            >
+                🚀 REZERVĒT VIETU
+            </button>
+
+
+            <!-- RADOŠS FORMACTION -->
+
+            <button
+                type="submit"
+                class="escape"
+                formmethod="get"
+                formaction="https://www.google.com/search"
+            >
+                😨 TOMĒR PALIKT UZ ZEMES
+            </button>
+
+
+        </div>
 
     </form>
 
-</body>
 
-</html>
+
+    <!--
+        ELEMENTS ĀRPUS FORMAS
+    -->
+
+    <div class="outside">
+
+        <h3>📮 Marsa pasta adrese</h3>
+
+        <p>
+            Izdomā savu nākotnes adresi uz Marsa.
+            Šis lauks speciāli atrodas ārpus formas.
+        </p>
+
+        <label for="marsAddress">
+            Mana jaunā Marsa adrese
+        </label>
+
+        <input
+            type="text"
+            id="marsAddress"
+            name="marsAddress"
+            form="marsHoliday"
+            placeholder="Olympus Street 42, Mars"
+        >
+
+    </div>
+
+
+</div>
+
+
+<footer>
+
+    BON VOYAGE MARS! © 2026
+    <br>
+    No refunds. Obviously.
+
+</footer>
+
 
 </body>
 
